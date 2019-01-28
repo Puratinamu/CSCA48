@@ -94,19 +94,6 @@ void stringConcatenate(char *strDest, char *strSrc) {
 
 }
 
-void stringConcatenateExample(char *strDest, char *strSrc) {
-    
-   while(*strDest)
-      strDest++;
-     
-   while(*strSrc) {
-      *strDest = *strSrc;
-      strSrc++;
-      strDest++;
-   }
-   *strDest = '\0';
-
-}
 
 int main() {
 
@@ -115,7 +102,7 @@ int main() {
 
     char a[30] = "Hello";
     char b[30] = " There";
-    stringConcatenateExample(a, b);
+    stringConcatenate(a, b);
     printf("%s\n", a);
 
     return 0;
@@ -130,12 +117,16 @@ int main() {
 
 
 
+void stringConcatenateExample(char *strDest, char *strSrc) {
+    
+   while(*strDest)
+      strDest++;
+     
+   while(*strSrc) {
+      *strDest = *strSrc;
+      strSrc++;
+      strDest++;
+   }
+   *strDest = '\0';
 
-
-
-
-
-
-
-
-
+}
