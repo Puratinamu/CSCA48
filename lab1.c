@@ -23,7 +23,7 @@ mark, such that:
 Final Mark = (.1*A1) + (.15 *A2) + (.2 *A3) + (.25 *Mid) + (.3 *Fin)
 
 */
-void calculate_marks(int students[6], int marks[6][5]) {
+void calculate_marks(float students[6], int marks[6][5]) {
 
     // your code goes here
 
@@ -32,7 +32,7 @@ void calculate_marks(int students[6], int marks[6][5]) {
 int main() {
 
     // declare student array
-    int students[6] = {0, 0, 0, 0, 0, 0};
+    float students[6] = {0, 0, 0, 0, 0, 0};
     // declare marks array
     int marks[6][5] = {
         {15,25,45,25,75},
