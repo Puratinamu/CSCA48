@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define SIZE 100000
+#define SIZE 100000 // add a few extra zeroes for quicksort ;)
 
 int compare(const void *a, const void *b) {
 
